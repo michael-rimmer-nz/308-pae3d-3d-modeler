@@ -1,4 +1,4 @@
-# PAE3D #
+# PAE3D - 3D Modeler Project #
 **Author(s):      Henry P, Michael R**
 
 ### Description ###
@@ -9,6 +9,7 @@
 
 The project was done in pairs, my partner was Henry P. We decided to make a 3D Modeler to discover the process involved in creating an interface that allows an inexperienced user to create complex models by using the interface’s tools/operations. Henry built the core model structure, while my focus was individual tools/operations and the user interface. The project is intended to be a proof of concept as it is a first attempt at making a 3D Modeler. 
 
+This repository is for historical and storage purposes. 
 
 #### Edits ####
 
@@ -177,7 +178,7 @@ a. Install vcxsrv on Windows
 
 b. Start XLaunch on Windows
 
-	!Important!
+	Note:
 	For this application to work with WSL apps it has to be allowed on public and private networks. 
 
 	- Select Multiple Windows (default)
