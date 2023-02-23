@@ -21,13 +21,13 @@ This repository is for historical and storage purposes.
  
 #### Potential Improvements ####
  
- - Improve naming for some functions and defines, global and local variable. Some don't describe themselves as well as they could. There needs to be more consistency in the name format. 
+ - Improve naming for some functions, definitions, global and local variable. Some don't describe themselves as well as they could. There needs to be more consistency in the name formatting. 
  - Look into optimising functions and their design.
  - Duplicate is not on the toolbar.
- - Model.cpp is large and could have some of it transformation operations moved to a new 'ModelTransform' class. Functions: subdivide, extrude, merge, duplicate etc.
+ - Model.cpp is large and could have some of its transformation operations moved to a new 'ModelTransform' class. Functions: subdivide/smooth, extrude, merge, duplicate etc.
  - There is only one Model class instance. We have not looked at how it behaves with more than one model instance. 
- - Duplicate would be better named "copy" since it copies vertices, edges and faces within the model instance. A 'duplicate' would ideally create a copy instance of the model. 
- - With multiple instances of a model you could have an 'object dashboard' and include tools for creating new objects and managing them. 
+ - Duplicate would be better named "copy" since it copies vertices, edges and faces within the model instance. A 'duplicate' would ideally create a copy instance of the model instead. 
+ - With multiple instances of a model we could add an 'object dashboard' and include tools for creating new objects and managing them. 
 
 ### Build and Run ###
 
@@ -45,61 +45,61 @@ This repository is for historical and storage purposes.
 
 ### Usage ###
 
-	Top toolbar buttons have short cut keys written on them; They work as follows.
+Top toolbar buttons have short cut keys written on them; They work as follows.
 
-	**Camera:**
+**Camera:**
 
-		middle click + drag to rotate.
-		ctrl + middle click + drag to zoom.
-		shift + middle click + drag to pan.
+	middle click + drag to rotate.
+	ctrl + middle click + drag to zoom.
+	shift + middle click + drag to pan.
 
-	**Selection:**
-		f, e, v toggle selection mode to faces, edges and vertices respectively.
-		a to select all.
-		right click to select face, edge or vertex.
+**Selection:**
+	f, e, v toggle selection mode to faces, edges and vertices respectively.
+	a to select all.
+	right click to select face, edge or vertex.
 
-	**Move/Scale(M,S):**
+**Move/Scale(M,S):**
 
-		(M) to toggle to move mode
-		(S) to toggle to scale mode
-		left click + drag handles to move/scale
+	(M) to toggle to move mode
+	(S) to toggle to scale mode
+	left click + drag handles to move/scale
 
-	**Regional Extrude(X):**
+**Regional Extrude(X):**
 
-		(X) to extrude selected faces, note you need to move or scale after as it extrudes in place.
+	(X) to extrude selected faces, note you need to move or scale after as it extrudes in place.
 
-	**Merge(L):**
+**Merge(L):**
 
-		(L) to merge all selected vertices, edges, faces to the center of the selection (handle position)
+	(L) to merge all selected vertices, edges, faces to the center of the selection (handle position)
 
-	**Subdivide(D):**
+**Subdivide(D):**
 
-		(D) to subdivide selected faces, if none are selected will subdivide the whole model
+	(D) to subdivide selected faces, if none are selected will subdivide the whole model
 
-	**Smooth(G):**
+**Smooth(G):**
 
-		(G) to smooth selected faces, if none are selected will smooth the whole model
+	(G) to smooth selected faces, if none are selected will smooth the whole model
 
-	**Colour(C):**
+**Colour(C):**
 
-		c to enable/disable colouring by left click. colouring a face will set it to the material selected in the colour window
-		in the bottom left of the screen.
+	c to enable/disable colouring by left click. colouring a face will set it to the material selected in the colour window
+	in the bottom left of the screen.
 
-		+ button to add new material.
-		<, > buttons to navigate the materials.
-		sliders to change material parameters.
+	+ button to add new material.
+	<, > buttons to navigate the materials.
+	sliders to change material parameters.
 
-	**Renderer(P):**
+**Renderer(P):**
 
-		p to switch to render mode, only faces are drawn with gourad shading. A skybox is added for aesthetics.
+	p to switch to render mode, only faces are drawn with gourad shading. A skybox is added for aesthetics.
 
-	**Delete(del):**
+**Delete(del):**
 
-		(del) to delete all selected faces, edges and vertices and any edges and faces attached to selected verticies
+	(del) to delete all selected faces, edges and vertices and any edges and faces attached to selected verticies
 
-	**Duplicate(1):**
+**Duplicate(1):**
 
-		(1) number key to duplicate all selected faces, edges and vertices
+	(1) number key to duplicate all selected faces, edges and vertices
 
 
 ## WSL2 Installation ##
