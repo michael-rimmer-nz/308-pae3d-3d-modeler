@@ -11,6 +11,8 @@ The project was done in pairs, my partner was Henry P. We decided to make a 3D M
 
 This repository is for historical and storage purposes. 
 
+![Screenshot](https://github.com/michael-rimmer-nz/308-pae3d-3d-modeler/blob/main/screenshots/001.png)
+
 #### Edits ####
 
 2023
