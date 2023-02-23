@@ -7,7 +7,7 @@
 
 2014 final project for my computer graphics class. The project objective was to create a design interface for modelling unique functions/operations on 3D objects using OpenGL.
 
-The project was done in pairs, my partner was Henry P. We decided to make a 3D Modeler to discover the process involved in creating an interface that allows an inexperienced user to create complex models by using the interface’s tools/operations. Henry built the core model structure, while my focus was individual tools/operations and the user interface. The project is intended to be a proof of concept as it is a first attempt at making a 3D Modeler. 
+The project was done in pairs; my partner was Henry P. We decided to make a 3D Modeler to discover the process involved in creating an interface that allows an inexperienced user to create complex models by using the interfaces tools/operations. Henry built the core model structure, while my focus was on individual tools/operations and the user interface. The project is intended to be a proof of concept as it is a first attempt at making a 3D Modeler. 
 
 This repository is for historical and storage purposes. 
 
