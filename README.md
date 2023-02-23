@@ -5,7 +5,7 @@
 
 **COMP 308 Introduction to Computer Graphics - Final Project**
 
-2014 final project for my computer graphics class. The project objective was to create a design interface for modeling unique functions/operations on 3D objects using OpenGL.
+2014 final project for my computer graphics class. The project objective was to create a design interface for modelling unique functions/operations on 3D objects using OpenGL.
 
 The project was done in pairs, my partner was Henry P. We decided to make a 3D Modeler to discover the process involved in creating an interface that allows an inexperienced user to create complex models by using the interface’s tools/operations. Henry built the core model structure, while my focus was individual tools/operations and the user interface. The project is intended to be a proof of concept as it is a first attempt at making a 3D Modeler. 
 
@@ -14,9 +14,9 @@ This repository is for historical and storage purposes.
 #### Edits ####
 
 2023
- - Basic code formating to be more readble. 
+ - Basic code formatting to be more readable. 
  - Code comments for historical purposes.
- - Minor fix to the selection processing that auto-selects edges, faces when verticies are selected (2 lines changed). 
+ - Minor fix to the selection processing that auto-selects edges, faces when vertices are selected (2 lines changed). 
  - No major functional changes. 
  
 #### Potential Improvements ####
@@ -27,7 +27,7 @@ This repository is for historical and storage purposes.
  - Model.cpp is large and could have some of it transformation operations moved to a new 'ModelTransform' class. Functions: subdivide, extrude, merge, duplicate etc.
  - There is only one Model class instance. We have not looked at how it behaves with more than one model instance. 
  - Duplicate would be better named "copy" since it copies vertices, edges and faces within the model instance. A 'duplicate' would ideally create a copy instance of the model. 
- - With multiple instance of a model you could have an 'object dashboard' and include tools for creating new objects and managing them. 
+ - With multiple instances of a model you could have an 'object dashboard' and include tools for creating new objects and managing them. 
 
 ### Build and Run ###
 
@@ -54,7 +54,7 @@ This repository is for historical and storage purposes.
 		shift + middle click + drag to pan.
 
 	**Selection:**
-		f, e, v toggle selection mode to faces, edges and verticies respectively.
+		f, e, v toggle selection mode to faces, edges and vertices respectively.
 		a to select all.
 		right click to select face, edge or vertex.
 
@@ -70,7 +70,7 @@ This repository is for historical and storage purposes.
 
 	**Merge(L):**
 
-		(L) to merge all selected verticies, edges, faces to the center of the selection (handle position)
+		(L) to merge all selected vertices, edges, faces to the center of the selection (handle position)
 
 	**Subdivide(D):**
 
@@ -82,7 +82,7 @@ This repository is for historical and storage purposes.
 
 	**Colour(C):**
 
-		c to enable/disable coulouring by left click. colouring a face will set it to the material selected in the colour window
+		c to enable/disable colouring by left click. colouring a face will set it to the material selected in the colour window
 		in the bottom left of the screen.
 
 		+ button to add new material.
@@ -95,11 +95,11 @@ This repository is for historical and storage purposes.
 
 	**Delete(del):**
 
-		(del) to delete all selected faces, edges and verticies and any edges and faces attached to selected verticies
+		(del) to delete all selected faces, edges and vertices and any edges and faces attached to selected verticies
 
 	**Duplicate(1):**
 
-		(1) number key to duplicate all selected faces, edges and verticies
+		(1) number key to duplicate all selected faces, edges and vertices
 
 
 ## WSL2 Installation ##
@@ -109,14 +109,14 @@ This repository is for historical and storage purposes.
 **Install:** https://learn.microsoft.com/en-us/windows/wsl/install-manual 
 
 The Windows Subsystem for Linux (WSL) lets developers install a Linux distribution (e.g. Ubuntu).
-You can use Linux applications, utilities, and Bash command-line tools directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup. 
-Alternatively you can use a Linux OS or Virutal Machine. For this setup I used Ubuntu with WSL 2. 
+You can use Linux applications, utilities, and Bash command-line tools directly on Windows, unmodified, without the overhead of a traditional virtual machine or dual-boot setup. 
+Alternatively you can use a Linux OS or Virtual Machine. For this setup I used Ubuntu with WSL 2. 
 
 Notes: When using WSL you will also need to install and set up VcXsrv for generating a display window as explained below. 
 
 ### STEPS ###
 
-1. Install a distribution to WSL (e.g. Ubuntu)
+1. Install a distribution to WSL (e.g., Ubuntu)
 
 Commands:
 
@@ -150,7 +150,7 @@ e.g.
  $ cd ~\<project>
 
 
-4. Install required project libaries:
+4. Install required project libraries:
 
 	$ sudo apt-get install g++-mingw-w64
 	$ sudo apt-get install freeglut3-dev
@@ -161,16 +161,16 @@ e.g.
 
 	$ Make
 
-	This should build the project as long as the libaries are correct. 
+	This should build the project as long as the libraries are correct. 
 
 
 6. Setup Application Display Windows
 
-WSL won't have a window to diplay the application when it is run. 
+WSL won't have a window to display the application when it is run. 
 Here we use vcxsrv as a display server for Windows to display our Linux apps. 
 It listens for application connections and will display them when connected to. 
 
-Resrouce: https://github.com/microsoft/WSL/issues/4106
+Resource: https://github.com/microsoft/WSL/issues/4106
 
 a. Install vcxsrv on Windows
 
@@ -190,7 +190,7 @@ b. Start XLaunch on Windows
 
 c. In your distribution command line, set your DISPLAY env variable to your WSL IP address and set LIBGL_ALWAYS_INDIRECT. 
 
-	example/
+	Example:
 	
 	$ cat /etc/resolv.conf
 	  # This file was automatically generated by WSL. To stop automatic generation of this file, add the following entry to /etc/wsl.conf:
@@ -200,9 +200,9 @@ c. In your distribution command line, set your DISPLAY env variable to your WSL 
 	$ export DISPLAY=172.25.240.1:0.0
 	$ export LIBGL_ALWAYS_INDIRECT=1
 	
-d. [Optional] also put the above export commands in ~/.bashrc
+d. [Optional] Also put the above export commands in ~/.bashrc
 
-e. install test apps and run a test
+e. Install test apps and run a test
 
 	$ run sudo apt install x11-apps -y
 	$ xeyes
