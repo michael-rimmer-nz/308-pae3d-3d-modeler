@@ -1,4 +1,4 @@
-#PAE3D#
+# PAE3D #
 **Author(s):      Henry P, Michael R**
 
 ### Description ###
@@ -28,7 +28,7 @@ The project was done in pairs, my partner was Henry P. We decided to make a 3D M
  - Duplicate would be better named "copy" since it copies vertices, edges and faces within the model instance. A 'duplicate' would ideally create a copy instance of the model. 
  - With multiple instance of a model you could have an 'object dashboard' and include tools for creating new objects and managing them. 
 
-###Build and Run###
+### Build and Run ###
 
 **Compile:**
 
@@ -42,7 +42,7 @@ The project was done in pairs, my partner was Henry P. We decided to make a 3D M
 
 	S ./build/PAE3D -o models/Teapot.obj
 
-###Usage###
+### Usage ###
 
 	Top toolbar buttons have short cut keys written on them; They work as follows.
 
@@ -101,9 +101,9 @@ The project was done in pairs, my partner was Henry P. We decided to make a 3D M
 		(1) number key to duplicate all selected faces, edges and verticies
 
 
-##WSL2 Installation##
+## WSL2 Installation ##
 
-###Using WSL2###
+### Using WSL2 ###
 
 **Install:** https://learn.microsoft.com/en-us/windows/wsl/install-manual 
 
@@ -113,7 +113,7 @@ Alternatively you can use a Linux OS or Virutal Machine. For this setup I used U
 
 Notes: When using WSL you will also need to install and set up VcXsrv for generating a display window as explained below. 
 
-###STEPS###
+### STEPS ###
 
 1. Install a distribution to WSL (e.g. Ubuntu)
 
