@@ -24,6 +24,7 @@ This repository is for historical and storage purposes.
  - Improve naming for some functions, definitions, global and local variable. Some don't describe themselves as well as they could. There needs to be more consistency in the name formatting. 
  - Look into optimising functions and their design.
  - Duplicate is not on the toolbar.
+ - Can only extrude one face at a time. Cannot extrude multiple faces, nor any edges or vertices. 
  - Model.cpp is large and could have some of its transformation operations moved to a new 'ModelTransform' class. Functions: subdivide/smooth, extrude, merge, duplicate etc.
  - There is only one Model class instance. We have not looked at how it behaves with more than one model instance. 
  - Duplicate would be better named "copy" since it copies vertices, edges and faces within the model instance. A 'duplicate' would ideally create a copy instance of the model instead. 
