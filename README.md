@@ -1,5 +1,5 @@
 # PAE3D - 3D Modeler Project #
-**Author(s):      Henry P, Michael R**
+**Authors:      Henry P, Michael R**
 
 ### Description ###
 
@@ -31,15 +31,15 @@ This repository is for historical and storage purposes.
 
 ### Build and Run ###
 
-**Compile:**
+** Compile: **
 
 	$ make
 
-**Run with default generated cube:**
+** Run with default generated cube: **
 
 	$ ./build/PAE3D
 
-**Run with loaded model object file:**
+** Run with loaded model object file: **
 
 	S ./build/PAE3D -o models/Teapot.obj
 
@@ -47,40 +47,40 @@ This repository is for historical and storage purposes.
 
 	Top toolbar buttons have short cut keys written on them; They work as follows.
 
-	**Camera:**
+	** Camera: **
 
 		middle click + drag to rotate.
 		ctrl + middle click + drag to zoom.
 		shift + middle click + drag to pan.
 
-	**Selection:**
+	** Selection: **
 		f, e, v toggle selection mode to faces, edges and vertices respectively.
 		a to select all.
 		right click to select face, edge or vertex.
 
-	**Move/Scale(M,S):**
+	** Move/Scale(M,S): **
 
 		(M) to toggle to move mode
 		(S) to toggle to scale mode
 		left click + drag handles to move/scale
 
-	**Regional Extrude(X):**
+	** Regional Extrude(X): **
 
 		(X) to extrude selected faces, note you need to move or scale after as it extrudes in place.
 
-	**Merge(L):**
+	** Merge(L): **
 
 		(L) to merge all selected vertices, edges, faces to the center of the selection (handle position)
 
-	**Subdivide(D):**
+	** Subdivide(D): **
 
 		(D) to subdivide selected faces, if none are selected will subdivide the whole model
 
-	**Smooth(G):**
+	** Smooth(G): **
 
 		(G) to smooth selected faces, if none are selected will smooth the whole model
 
-	**Colour(C):**
+	** Colour(C): **
 
 		c to enable/disable colouring by left click. colouring a face will set it to the material selected in the colour window
 		in the bottom left of the screen.
@@ -89,15 +89,15 @@ This repository is for historical and storage purposes.
 		<, > buttons to navigate the materials.
 		sliders to change material parameters.
 
-	**Renderer(P):**
+	** Renderer(P): **
 
 		p to switch to render mode, only faces are drawn with gourad shading. A skybox is added for aesthetics.
 
-	**Delete(del):**
+	** Delete(del): **
 
 		(del) to delete all selected faces, edges and vertices and any edges and faces attached to selected verticies
 
-	**Duplicate(1):**
+	** Duplicate(1): **
 
 		(1) number key to duplicate all selected faces, edges and vertices
 
@@ -106,7 +106,7 @@ This repository is for historical and storage purposes.
 
 ### Using WSL2 ###
 
-**Install:** https://learn.microsoft.com/en-us/windows/wsl/install-manual 
+** Install: ** https://learn.microsoft.com/en-us/windows/wsl/install-manual 
 
 The Windows Subsystem for Linux (WSL) lets developers install a Linux distribution (e.g. Ubuntu).
 You can use Linux applications, utilities, and Bash command-line tools directly on Windows, unmodified, without the overhead of a traditional virtual machine or dual-boot setup. 
